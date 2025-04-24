@@ -24,14 +24,18 @@ const IconList = ({ product }) => {
 
   const handleHeartClick = () => {
     dispatch(addToWishlist(product));
+    console.log("Added to wishlist:", product);
+    alert('Added to Wishlist');
   };
+
 
 
 
   return (
     <ul className="d-flex align-items-center justify-content-center list-unstyled icons">
       <li className="icon">
-        <Link to={{ pathname: '/details/' }} onClick={handleProductClick}>
+        <Link to={`/details/${product.id}`} onClick={handleProductClick}>
+
           <span className="fas fa-expand-arrows-alt"></span>
         </Link>
       </li>

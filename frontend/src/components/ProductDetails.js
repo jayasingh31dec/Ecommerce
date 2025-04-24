@@ -4,7 +4,7 @@ import './details.css';
 const ProductDetails = ({ product }) => {
   useEffect(() => {
     if (product) {
-      console.log("Product Details:", product); // ✅ Log only once when product is available
+      console.log("Product Details:", product); 
     }
   }, [product]);
 

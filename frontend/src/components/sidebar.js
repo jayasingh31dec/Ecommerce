@@ -74,6 +74,25 @@ const Sidebar = () => {
             <span role="img" aria-label="Payment" className="me-2">💳</span> Payment
           </Link>
         </li>
+
+        <li className="nav-item mb-3">
+          <Link to="/login" className="nav-link text-white d-flex align-items-center">
+            <span role="img" aria-label="Login" className="me-2">🔐</span> Login
+          </Link>
+        </li>
+
+        <li className="nav-item mb-3">
+          <Link to="/register" className="nav-link text-white d-flex align-items-center">
+            <span role="img" aria-label="Register" className="me-2">📝</span> Register
+          </Link>
+        </li>
+
+        <li className="nav-item mb-3">
+          <Link to="/profile" className="nav-link text-white d-flex align-items-center">
+            <span role="img" aria-label="Profile" className="me-2">👤</span> Profile
+          </Link>
+        </li>
+
       </ul>
     </div>
   );

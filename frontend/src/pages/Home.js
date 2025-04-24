@@ -16,7 +16,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="container bg-white">
+      <div className="container my-5">
         <div className="row">
           <ProductSection />
         </div>
@@ -24,5 +24,4 @@ function Home() {
     </>
   );
 }
-
 export default Home;

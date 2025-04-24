@@ -1,4 +1,4 @@
-// src/pages/CosmeticsProducts.js
+
 import React, { useEffect, useState } from 'react';
 import ProductItem from '../components/ProductItem';
 
@@ -6,7 +6,7 @@ function CosmeticsProducts() {
   const [cosmeticsProducts, setCosmeticsProducts] = useState([]);
 
   useEffect(() => {
-    // Using 'jewelery' as temporary cosmetics category
+    
     fetch('https://fakestoreapi.com/products/category/jewelery')
       .then(res => res.json())
       .then(data => setCosmeticsProducts(data))

@@ -1,4 +1,4 @@
-// src/pages/Kids.js
+
 
 import React, { useEffect, useState } from 'react';
 import ProductItem from '../components/ProductItem';
@@ -7,11 +7,11 @@ function Kids() {
   const [kidsProducts, setKidsProducts] = useState([]);
 
   useEffect(() => {
-    // Since there's no real "kids" category, fetch all products and filter a few as "kids"
+    
     fetch("https://fakestoreapi.com/products")
       .then(res => res.json())
       .then(data => {
-        // Fake filter: Select some items manually (you can change this logic later)
+        
         const filtered = data.filter(
           item =>
             item.title.toLowerCase().includes('shirt') ||

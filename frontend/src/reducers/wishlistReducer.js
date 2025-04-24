@@ -1,9 +1,9 @@
-// Initial state for wishlist
+
 const initialState = {
-  wishlistItems: [], // Array to store items in the wishlist
+  wishlistItems: [], 
 };
 
-// wishlistReducer function
+
 const wishlistReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_TO_WISHLIST':
@@ -15,13 +15,13 @@ const wishlistReducer = (state = initialState, action) => {
     case 'REMOVE_FROM_WISHLIST':
       return {
         ...state,
-        wishlistItems: state.wishlistItems.filter(item => item.id !== action.payload.id), // Remove item from wishlist
+        wishlistItems: state.wishlistItems.filter(item => item.id !== action.payload.id), 
       };
 
     case 'CLEAR_WISHLIST':
       return {
         ...state,
-        wishlistItems: [], // Clear wishlist
+        wishlistItems: [], 
       };
 
     default:
